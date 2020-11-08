@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200&display=swap');
+*{    
+font-family: 'Montserrat', sans-serif;
+}
+body{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+box-sizing: border-box;
+overflow-x: hidden;
+animation: non 1s linear;
+
+}
+.video{
+  width:100%;
+height:100%;
+align-items:center;
+position: relative;
+}
+video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+}
+section{
+width: 40%;
+height: 60vh;
+position: relative;
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+border-radius: 10%;
+padding: 2rem 2rem 4rem 3rem;
+z-index: 1000;            
+overflow: hidden;
+bottom:40rem;
+left: 30%;
+
+}
+section:hover{
+  background-color: #ffffef;
+  transition:0.5s ease-in-out;
+}
+
+.cont{
+ margin-bottom:0%;
+}
+
+#name ,#password,#cpassword,#email                       
+                         {   
+border-top:white; 
+  border-left:white;
+    border-right:white;
+    width: 30vw;
+    outline: none;
+    border-bottom: 2px green solid;
+    margin-bottom: 3%;
+    z-index: 1000;
+}
+input{
+  position: relative;
+  height: 5vh;
+  width:1vw;
+  animation: xd 2s linear 3s ease-in-out;
+  transition:0.5s ease-in-out;
+  font-weight: 1000;
+  background: transparent;
+
+}
+#button{
+    border:none;
+    width: 40vw;
+    outline: none;
+  height: 5vh;
+    margin-top: 10%;
+    cursor: pointer;
+}
+#button:hover{
+    background-color: black;
+    color:#fff;
+    transition: 0.5s ease-in-out;
+}
+#cap ,#nap , #zap{
+position: relative;
+left: 5rem;
+bottom:1.92rem;
+letter-spacing: 0em;
+color:red;
+
+display: none;
+}
+main-div{
+  width: 100%;
+height: 100vh;
+
+} main-div p{
+  margin-left: 10%;
+  font-weight: 1000;
+}
+
+@media (max-width: 700px){
+
+  #cap ,#nap , #zap{
+    position: relative;
+    left: 2rem;
+    bottom:1.25rem;
+    letter-spacing: 0em;
+    color:red;
+    display: none;
+    }
+.cont{
+  margin-top: 5%;
+}
+
+}
+
+
+
+.vam{
+  position: relative;
+  width:100%;
+  height: 100vh;
+  text-align: center;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+display: none;
+color: black;
+animation: xd 1s linear 1;
+transition:0.5s ease-in-out;
+}
+
+h2{
+  position: relative;
+  left: 10rem;
+}
+
+@keyframes non {
+
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
+}
+@keyframes xd {
+
+  from {
+    left: 100px;
+    opacity: 0;
+  }
+  to{
+    left: 0px;
+    opacity: 1;
+  }
+
+}
+
